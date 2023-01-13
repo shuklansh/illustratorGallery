@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_weight="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/TEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tolightbtn"
+                style="@style/PICBG"
+                android:background="@drawable/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="tolight"
+                android:paddingHorizontal="50dp"
+                android:text="LIGHT"/>
+
+            <Button
+                android:id="@+id/todarkbtn"
+                style="@style/PICBG"
+                android:background="@drawable/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="todark"
+                android:paddingHorizontal="50dp"
+                android:text="DARK">
+
+            </Button>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/mmimage"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/mm"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/mmimage"
+                    android:text="@string/mm"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/mmimage"
+                    android:text="@string/philosopherwho"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marcus"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/marcus" />
+
+                <TextView
+                    android:id="@+id/marcusname"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/marcus"
+                    android:text="@string/ma"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/marcusname"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/marcus"
+                    android:text="@string/philosopherwho"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/pele"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pele"
+
+                    />
+
+                <TextView
+                    android:id="@+id/pelename"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/pele"
+                    android:text="@string/pele"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pelename"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/pele"
+                    android:text="@string/footballerwho"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/supes"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/supes" />
+
+                <TextView
+                    android:id="@+id/supesname"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/supes"
+                    android:text="Clark Kent (Superman Henry Cavill)"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/supesname"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/supes"
+                    android:text="Superhero (actor)"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/krtos"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/krtos" />
+
+                <TextView
+                    android:id="@+id/krtosname"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/krtos"
+                    android:text="Kratos"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/krtosname"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/krtos"
+                    android:text="Videogame character (God)"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/bts"
+                    style="@style/PICBG"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/btmn"
+
+                    />
+
+                <TextView
+                    android:id="@+id/btsname"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/bts"
+                    android:text="Batman"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btsname"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/bts"
+                    android:text="Superhero (vigilante)"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

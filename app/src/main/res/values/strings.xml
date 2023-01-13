@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Illustrator projects</string>
+    <string name="mm">Miyamoto Musashi</string>
+    <string name="philosopherwho">Philosopher</string>
+
+    <string name="ma">Marcus Aurelius</string>
+
+    <string name="pele">"Pele" Edson Arantes do Nascimento</string>
+    <string name="footballerwho">Footballer</string>
+
+    <string name="margindist.namesize">20dp</string>
+    <string name="whosize">18dp</string>
+    <string name="preference_file_name">App One preferences</string>
+</resources>
